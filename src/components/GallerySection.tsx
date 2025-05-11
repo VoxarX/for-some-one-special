@@ -34,7 +34,7 @@ const GalleryItem: React.FC<GalleryItemProps> = ({ title, description, imageUrl,
           
           {/* Hover overlay */}
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <Button variant="outline" className="bg-mechanical-dark/70 border-mechanical-accent text-white">
+            <Button variant="outline" className="bg-mechanical-dark/70 border-purple-500 text-white">
               View Details
             </Button>
           </div>
@@ -48,7 +48,7 @@ const GalleryItem: React.FC<GalleryItemProps> = ({ title, description, imageUrl,
 
       {/* Lightbox dialog */}
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="metal-card max-w-3xl bg-mechanical-dark border-mechanical-silver/20 p-0">
+        <DialogContent className="metal-card max-w-3xl bg-mechanical-dark border-purple-500/20 p-0">
           <div className="relative">
             <Button
               variant="ghost"
@@ -74,51 +74,33 @@ const GalleryItem: React.FC<GalleryItemProps> = ({ title, description, imageUrl,
 };
 
 const GallerySection: React.FC = () => {
-  // Placeholder images - replace with real images when available
+  // Show only first 3 gallery items
   const galleryItems = [
     {
       title: "Motorcycle Engineering",
       description: "The art and science of motorbike mechanics — combining precision engineering with the thrill of the ride.",
       imageUrl: "https://images.unsplash.com/photo-1558981852-426c6c22a060?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      icon: <Bike className="w-5 h-5 text-mechanical-accent" />
+      icon: <Bike className="w-5 h-5 text-purple-500" />
     },
     {
       title: "Skateboarding Freedom",
       description: "The perfect balance of technical skill and personal expression — just like your approach to engineering.",
       imageUrl: "https://images.unsplash.com/photo-1564982752979-3f7bc974d29a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-      icon: <Briefcase className="w-5 h-5 text-mechanical-blue" />
+      icon: <Briefcase className="w-5 h-5 text-purple-400" />
     },
     {
       title: "Precision Tools",
       description: "The tools of the trade for someone who knows how to build, fix, and engineer the world around them.",
       imageUrl: "https://images.unsplash.com/photo-1581166397057-235af2b3c6dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      icon: <Wrench className="w-5 h-5 text-mechanical-accent" />
-    },
-    {
-      title: "Engineering Design",
-      description: "The beautiful intersection of mathematics, physics, and creativity — the place where you thrive.",
-      imageUrl: "https://images.unsplash.com/photo-1581093196277-9f6e9b8fca20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      icon: <Wrench className="w-5 h-5 text-mechanical-blue" />
-    },
-    {
-      title: "Speed & Mechanics",
-      description: "Understanding the engineering that makes high-performance machines work is your superpower.",
-      imageUrl: "https://images.unsplash.com/photo-1590461336362-58383de5f55d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-      icon: <Bike className="w-5 h-5 text-mechanical-accent" />
-    },
-    {
-      title: "Urban Skating",
-      description: "Finding your path through the urban landscape, always with style and technical precision.",
-      imageUrl: "https://images.unsplash.com/photo-1572776685600-aca8c3a7e43c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1136&q=80",
-      icon: <Briefcase className="w-5 h-5 text-mechanical-blue" />
-    },
+      icon: <Wrench className="w-5 h-5 text-purple-500" />
+    }
   ];
 
   return (
     <section className="section-padding" id="gallery">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="section-heading">Passion Gallery</h2>
+          <h2 className="section-heading after:bg-purple-500">Passion Gallery</h2>
           <p className="text-mechanical-silver max-w-2xl mx-auto">
             A collection celebrating the things that make you uniquely amazing.
           </p>

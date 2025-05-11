@@ -69,6 +69,15 @@ export default {
 					silver: '#D1D5DB',
 					accent: '#F97316',
 					blue: '#0EA5E9'
+				},
+				purple: {
+					300: '#D8B4FE',
+					400: '#C084FC',
+					500: '#A855F7',
+					600: '#9333EA',
+					700: '#7E22CE',
+					800: '#6B21A8',
+					900: '#581C87'
 				}
 			},
 			borderRadius: {

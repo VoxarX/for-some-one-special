@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
     <footer className="py-8 px-4 border-t border-mechanical-gray/20">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center gap-2 mb-4 md:mb-0">
-          <Cog className="w-5 h-5 text-mechanical-accent animate-gear-spin" />
+          <Cog className="w-5 h-5 text-purple-500 animate-gear-spin" />
           <span className="font-orbitron text-white">Birthday 2025</span>
         </div>
         
