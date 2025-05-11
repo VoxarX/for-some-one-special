@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Bike, Skateboard, Wrench, X } from "lucide-react";
+import { Bike, Briefcase, Wrench, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
@@ -86,7 +86,7 @@ const GallerySection: React.FC = () => {
       title: "Skateboarding Freedom",
       description: "The perfect balance of technical skill and personal expression — just like your approach to engineering.",
       imageUrl: "https://images.unsplash.com/photo-1564982752979-3f7bc974d29a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-      icon: <Skateboard className="w-5 h-5 text-mechanical-blue" />
+      icon: <Briefcase className="w-5 h-5 text-mechanical-blue" />
     },
     {
       title: "Precision Tools",
@@ -110,7 +110,7 @@ const GallerySection: React.FC = () => {
       title: "Urban Skating",
       description: "Finding your path through the urban landscape, always with style and technical precision.",
       imageUrl: "https://images.unsplash.com/photo-1572776685600-aca8c3a7e43c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1136&q=80",
-      icon: <Skateboard className="w-5 h-5 text-mechanical-blue" />
+      icon: <Briefcase className="w-5 h-5 text-mechanical-blue" />
     },
   ];
 

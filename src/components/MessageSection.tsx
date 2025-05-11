@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Gear, Tools, CircleDashed } from "lucide-react";
+import { Cog, Wrench, CircleDashed } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const MessageSection: React.FC = () => {
@@ -8,7 +8,7 @@ const MessageSection: React.FC = () => {
     <section className="blueprint-section section-padding relative" id="message">
       {/* Background decorations */}
       <div className="gear-decoration top-10 right-10">
-        <Gear className="w-32 h-32 text-mechanical-accent/20 animate-gear-spin" />
+        <Cog className="w-32 h-32 text-mechanical-accent/20 animate-gear-spin" />
       </div>
       <div className="gear-decoration bottom-10 left-10">
         <CircleDashed className="w-24 h-24 text-mechanical-blue/20 animate-gear-spin-reverse" />
@@ -22,10 +22,10 @@ const MessageSection: React.FC = () => {
         <div className="metal-card p-8 md:p-12 relative overflow-hidden">
           {/* Corner decorations */}
           <div className="absolute top-0 right-0 w-24 h-24 opacity-10">
-            <Tools className="w-full h-full text-mechanical-accent" />
+            <Wrench className="w-full h-full text-mechanical-accent" />
           </div>
           <div className="absolute bottom-0 left-0 w-24 h-24 opacity-10">
-            <Gear className="w-full h-full text-mechanical-blue animate-gear-spin-reverse" />
+            <Cog className="w-full h-full text-mechanical-blue animate-gear-spin-reverse" />
           </div>
           
           {/* Message content */}

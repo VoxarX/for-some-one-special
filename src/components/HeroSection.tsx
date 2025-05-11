@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Bike, Wrench, Gear } from "lucide-react";
+import { Bike, Wrench, Cog } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
@@ -92,10 +92,10 @@ const HeroSection: React.FC = () => {
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="gear-decoration top-1/4 -left-20">
-          <Gear className="w-40 h-40 text-mechanical-accent animate-gear-spin" />
+          <Cog className="w-40 h-40 text-mechanical-accent animate-gear-spin" />
         </div>
         <div className="gear-decoration bottom-1/4 -right-24">
-          <Gear className="w-56 h-56 text-mechanical-blue animate-gear-spin-reverse" />
+          <Cog className="w-56 h-56 text-mechanical-blue animate-gear-spin-reverse" />
         </div>
         <div className="absolute w-full h-full bg-blueprint opacity-10 z-0" />
       </div>

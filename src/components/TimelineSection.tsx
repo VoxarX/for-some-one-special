@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Bike, Skateboard, Wrench, Tools } from "lucide-react";
+import { Bike, Briefcase, Wrench, Settings } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface TimelineItemProps {
@@ -65,7 +65,7 @@ const TimelineSection: React.FC = () => {
       title: "That Day at the Skate Park",
       date: "Remember When",
       description: "Watching you nail those tricks on your skateboard was incredible. Your determination is something I really admire.",
-      icon: <Skateboard className="w-5 h-5" />
+      icon: <Briefcase className="w-5 h-5" />
     },
     {
       title: "The Motorbike Discussion",
@@ -77,7 +77,7 @@ const TimelineSection: React.FC = () => {
       title: "Today - Your Birthday!",
       date: "Right Now",
       description: "Celebrating you and all the amazing things about you. Here's to another year of being incredibly awesome!",
-      icon: <Tools className="w-5 h-5" />
+      icon: <Settings className="w-5 h-5" />
     }
   ];
 
