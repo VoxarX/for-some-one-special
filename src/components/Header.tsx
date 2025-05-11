@@ -15,7 +15,7 @@ const Header: React.FC = () => {
       <div className="flex items-center gap-3">
         <div className="hidden md:flex items-center gap-2 text-mechanical-silver">
           <Briefcase className="w-5 h-5" />
-          <span className="font-roboto-mono">Engineer Extraordinaire</span>
+          <span className="font-roboto-mono">Ruby</span>
         </div>
         <div className={cn(
           "h-10 w-10 rounded-full bg-gradient-to-r from-purple-500 to-purple-700",

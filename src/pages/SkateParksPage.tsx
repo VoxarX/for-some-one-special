@@ -55,50 +55,62 @@ const SkateSpot: React.FC<SkateSpotProps> = ({
 const SkateParksPage: React.FC = () => {
   const skateSpots = [
     {
-      title: "The Underground Pipe",
-      description: "An abandoned water facility with perfect pipes for grinding. Only the locals know about this gem.",
-      location: "Behind the old factory, North District",
-      imageUrl: "https://images.unsplash.com/photo-1572776685600-aca8c3a7e43c?auto=format&fit=crop&q=80&w=1469&ixlib=rb-4.0.3",
-      difficulty: "Medium" as const
-    },
-    {
-      title: "School After Hours",
-      description: "The high school has some of the best rails and stairs in town, and security rarely checks after 8 PM.",
-      location: "Central High School",
-      imageUrl: "https://images.unsplash.com/photo-1621544346589-c7b64a096acf?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3",
+      title: "Wythenshawe Park Pump Track",
+      description: "A smooth, looping pump track perfect for building momentum and flow. Ideal for skaters and BMX riders of all levels.",
+      location: "Wythenshawe Park, M23 0AB",
+      imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrMPAxS7ZbNljcZVwxaSYdAclztCev653bsfluYW4LTYSnOhPbHjH8s5RPCcEO9jmhWQJbjLBO9VGKmCbGj95dCrMCBWEbUAZIgdncXNHLKF8JrWo-r6LVGuRYo2AnO4YDfkTlWWw=s680-w680-h510",
       difficulty: "Easy" as const
     },
     {
-      title: "The Concrete Wave",
-      description: "A hidden bowl in the industrial area that looks like it was made specifically for skating, but it's actually an architectural accident.",
-      location: "Behind the warehouse district",
-      imageUrl: "https://images.unsplash.com/photo-1522163723043-478ef79a5bb4?auto=format&fit=crop&q=80&w=1413&ixlib=rb-4.0.3",
-      difficulty: "Hard" as const
+      title: "Projekts MCR Skatepark",
+      description: "A large, community-focused skatepark offering various ramps, rails, and ledges. Suitable for all skill levels.",
+      location: "41 Baring Street, Manchester, M1 2PY",
+      imageUrl: "https://lh3.googleusercontent.com/p/AF1QipNt80G7vR6W0mRKzZS337kDZ3DmwO3lgYoRAcA=s680-w680-h510",
+      difficulty: "Medium" as const
     },
     {
-      title: "Abandoned Power Station",
-      description: "A forgotten power station with multiple levels, rails, and unique architecture. Perfect for urban exploration and skating.",
-      location: "Outside city limits, east side",
-      imageUrl: "https://images.unsplash.com/photo-1601225998965-d26438c7a00b?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3",
+      title: "Wythenshawe Forum Roller Disco",
+      description: "An indoor roller skating venue hosting regular disco sessions. Great for practicing in a fun, music-filled environment.",
+      location: "Forum Centre, Simonsway, Wythenshawe, M22 5RX",
+      imageUrl: "https://static.wixstatic.com/media/757605_b9fd8f6ec9f8460eaa442c5325eea5b0~mv2.jpg/v1/fill/w_398,h_398,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/757605_b9fd8f6ec9f8460eaa442c5325eea5b0~mv2.jpg",
+      difficulty: "Easy" as const
+    },
+    {
+      title: "Alexandra Park Skatepark",
+      description: "A concrete skatepark featuring open bowls, a mini ramp, and a plaza section with stair sets and ledges.",
+      location: "Alexandra Park, Manchester, M16 7JL",
+      imageUrl: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrFqwcacfgHumFuYNSKrsNWVy_LHAIpcJxxS9zeAF6QOnuzECdxw17X_qLeB1BpWRRiePDpYO27WByb3sz-JsBv4WoUDDHfvL4Li4N3bGLlHWYfiYSJqwNlA61P0zMu2fuASRFg=s680-w680-h510",
+      difficulty: "Medium" as const
+    },
+
+    {
+      title: "Abandoned Tatton Arms Pub",
+      description: "A derelict pub offering unique architectural features. Caution advised due to structural instability.",
+      location: "Northenden, Manchester, M22",
+      imageUrl: "https://i.ytimg.com/vi/vqZ8AGbioeU/maxresdefault.jpg",
       difficulty: "Hard" as const,
       isUrbanExplore: true
     },
     {
-      title: "The Forgotten Mall",
-      description: "An abandoned shopping mall with smooth floors and plenty of features. Bring flashlights!",
-      location: "Downtown, Old Commerce District",
-      imageUrl: "https://images.unsplash.com/photo-1615746370440-1c24afb21fac?auto=format&fit=crop&q=80&w=1619&ixlib=rb-4.0.3",
-      difficulty: "Medium" as const,
+      title: "Barclays Data Centre",
+      description: "An abandoned data centre with multiple levels and industrial aesthetics. Entry may be restricted.",
+      location: "Wythenshawe, Manchester, M23",
+      imageUrl: "https://i.ytimg.com/vi/vCYgbdNWHrg/maxresdefault.jpg",
+      difficulty: "Hard" as const,
       isUrbanExplore: true
     },
+
     {
-      title: "Canal Edges",
-      description: "The edges of the canal have perfect ledges for grinding, but watch out for security during weekdays.",
-      location: "River District",
-      imageUrl: "https://images.unsplash.com/photo-1520454233024-41a43b4d37c5?auto=format&fit=crop&q=80&w=1473&ixlib=rb-4.0.3",
-      difficulty: "Medium" as const
+      title: "Peel Hall Moat",
+      description: "The remnants of an Elizabethan moated manor house. The area is now a park with recreational facilities.",
+      location: "Peel Hall, Manchester, M22",
+      imageUrl: "https://archaeologytea.wordpress.com/wp-content/uploads/2020/01/20200118_095921.jpg?w=394&h=526",
+      difficulty: "Easy" as const,
+      isUrbanExplore: true
     }
   ];
+  
+  
 
   return (
     <div className="min-h-screen bg-mechanical-dark text-foreground overflow-hidden">
@@ -116,7 +128,7 @@ const SkateParksPage: React.FC = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl font-orbitron font-bold text-white mb-4">
-            <span className="text-purple-500">Secret</span> Skate Spots
+            <span className="text-purple-500">Skate </span>Spots and more!
           </h1>
           <p className="text-mechanical-silver max-w-2xl mb-12">
             For your eyes only: the best hidden skate locations and urban exploration areas in town. 

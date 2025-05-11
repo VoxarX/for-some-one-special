@@ -33,8 +33,7 @@ const HeroSection: React.FC = () => {
         </h1>
         
         <p className="text-mechanical-silver text-lg md:text-xl max-w-2xl mx-auto mb-8">
-          To the amazing girl who knows her way around motorbikes, skateboards, 
-          and the intricate world of mechanical engineering.
+          To the amazing girl who knows her way around motorbikes and skateboards.
         </p>
         
         <div className="mt-8 md:mt-12">
@@ -46,20 +45,12 @@ const HeroSection: React.FC = () => {
         
         <div className="mt-10 md:mt-16 flex gap-4 justify-center">
           <Button
-            variant="default"
-            size="lg"
-            className="font-orbitron bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 transition-all duration-500 text-white"
-          >
-            Celebrate With Me
-          </Button>
-          
-          <Button
             variant="outline"
             size="lg"
-            className="font-orbitron border-purple-500 text-purple-300 hover:bg-purple-900/20"
+            className="font-orbitron bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 transition-all duration-500 text-white"
             asChild
           >
-            <Link to="/skate-parks">Secret Skate Spots</Link>
+            <Link to="/skate-parks">Secret Spots</Link>
           </Button>
         </div>
       </div>

@@ -31,26 +31,21 @@ const MessageSection: React.FC = () => {
           {/* Message content */}
           <div className="relative z-10">
             <p className="text-lg md:text-xl text-mechanical-silver mb-6 leading-relaxed">
-              Dear <span className="text-mechanical-accent font-orbitron">[Her Name]</span>,
+              Dear <span className="text-mechanical-accent font-orbitron">Ruby</span>,
             </p>
             
             <p className="text-mechanical-silver mb-6 leading-relaxed">
-              On your special day, I wanted to create something as unique and amazing as you are. Your passion for mechanics, 
-              the way your face lights up when you talk about engineering problems, and your incredible skills 
-              on both motorbikes and skateboards never cease to amaze me.
+              Happy birthday! Just wanted to say how cool it is seeing how passionate you are about the things you love — whether it’s building stuff, fixing things, or pulling off moves on your bike and board.
             </p>
-            
+
             <p className="text-mechanical-silver mb-6 leading-relaxed">
-              What makes you truly special isn't just your technical knowledge, but how you approach life with the 
-              same precision and creativity that you bring to your engineering projects. Your mind works in fascinating ways, 
-              finding solutions and seeing possibilities where others don't.
+              You’ve got a way of looking at the world that’s different, and it’s honestly inspiring. Always finding a way, always up for a challenge.
             </p>
-            
+
             <p className="text-mechanical-silver mb-6 leading-relaxed">
-              I hope this birthday brings you everything you've been designing in your mind. May your next trip around the 
-              sun be filled with new engineering challenges to solve, countless perfect rides (both on boards and bikes), 
-              and all the happiness you so richly deserve.
+              Hope today’s a good one for you. Here’s to new adventures, good rides, and whatever madness you decide to take on next.
             </p>
+
             
             <p className="text-xl font-orbitron text-mechanical-accent mt-8">
               Happy Birthday!
@@ -58,7 +53,7 @@ const MessageSection: React.FC = () => {
             
             <p className="text-mechanical-silver">
               With admiration,<br />
-              <span className="font-orbitron text-white">[Your Name]</span>
+              <span className="font-orbitron text-white">Aaron Mathew</span>
             </p>
           </div>
         </div>
